@@ -32,10 +32,10 @@ namespace HoraDeTrabajar.Droid
 			{
 				// Sign in with Facebook login using a server-managed flow.
 				user = await TodoItemManager.DefaultManager.CurrentClient.LoginAsync(this,
-					//MobileServiceAuthenticationProvider.Facebook);
+					MobileServiceAuthenticationProvider.Facebook);
 					//MobileServiceAuthenticationProvider.MicrosoftAccount);
 					//MobileServiceAuthenticationProvider.Twitter);
-					MobileServiceAuthenticationProvider.Google);
+					//MobileServiceAuthenticationProvider.Google);
 				if (user != null)
 				{
 					message = string.Format("you are now signed-in as {0}.",
